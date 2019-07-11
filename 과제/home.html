@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title style="font-family: 'Courier New', Courier, monospace">✨멋사를 소개합니다!✨</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        .card-back {
+            margin: 20px 1px;
+            padding: 20px;
+            width: 1108px;
+            height: 350px;
+            background-size: 1108px 350px;
+            background-image: url('lion.jpg');
+            box-shadow: 3px;
+            border: 1px solid black;
+        }
+        
+        div.special {
+            background-image: url('uni.png');
+            background-size: 450px 200px;
+            color: white;
+        }
+        
+        div.special1 {
+            background-image: url('ll.png');
+            background-size: 350px 200px;
+            color: black;
+            border-radius: 3px;
+        }
+        
+        .btn-1 {
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            color: white
+        }
+        
+        .btn-2 {
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            color: black;
+        }
+        
+        .btn-1:hover,
+        .btn-2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+        
+        @font-face {
+            font-family: 'fromdamiM';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'HangeulNuri-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Goyang';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'KimNamyun';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KimNamyun.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'BMHANNAAir';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'BRBA_B';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .blog-header-logo {
+            font-family: 'fromdamiM';
+            font-size: 58px;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 20px rgb(250, 175, 36), 0 0 5px rgb(180, 218, 14);
+        }
+        
+        .blog-header-logo:hover {
+            color: bisque;
+        }
+        
+        footer {
+            background-color: darkgrey;
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        
+        .effect2 {
+            position: relative;
+        }
+        
+        .effect2:before,
+        .effect2:after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            bottom: 25px;
+            left: 10px;
+            width: 50%;
+            top: 80%;
+            max-width: 300px;
+            background: #777;
+            -webkit-box-shadow: 0 35px 20px #777;
+            -moz-box-shadow: 0 35px 20px #777;
+            box-shadow: 0 35px 20px #777;
+            -webkit-transform: rotate(-8deg);
+            -moz-transform: rotate(-8deg);
+            -o-transform: rotate(-8deg);
+            -ms-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+        }
+        
+        .effect2:after {
+            -webkit-transform: rotate(8deg);
+            -moz-transform: rotate(8deg);
+            -o-transform: rotate(8deg);
+            -ms-transform: rotate(8deg);
+            transform: rotate(8deg);
+            right: 10px;
+            left: auto;
+        }
+        
+        .imgcard {
+            height: 200px;
+        }
+        
+        .bd-placeholder-img {
+            opacity: 0.85;
+        }
+        
+        @keyframes dancing {
+            0% {
+                margin-left: 0px;
+            }
+            50% {
+                margin-left: 200px;
+            }
+            100% {
+                margin-left: 0px;
+            }
+        }
+        
+        @keyframes dancing2 {
+            0% {
+                margin-left: 200px;
+            }
+            50% {
+                margin-left: 0px;
+            }
+            100% {
+                margin-left: 200px;
+            }
+        }
+        
+        .dancingLion2 {
+            animation-name: dancing2;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        .dancingLion {
+            animation-name: dancing;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        .pagination {
+            display: inline-block;
+            margin-left: 200px;
+        }
+        
+        .pagination a {
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        .pagination a:hover {
+            font-weight: bold;
+        }
+        
+        #n1 {
+            height: 5px;
+            background-image: url("heart.jpg");
+        }
+        
+        #music {
+            background-image: url("cool.jpg");
+            border-radius: 15px;
+            width: 300px;
+            padding: 4px;
+            box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="text-muted" href="join.html">Join</a> &emsp;&emsp;
+                    <a class="loginn" onclick="login()" style="cursor:pointer;">Login</a>&emsp;&emsp;
+                    <a class="text-muted" href="search.html">
+                        <svg style="cursor:help;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+                    </a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="home.html" style="text-decoration: none;" class="blog-header-logo ">멋쟁이 사자처럼</a>
+
+                </div>
+
+                <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+                <html xmlns="http://www.w3.org/1999/xhtml">
+
+
+                <body>
+
+
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function clockPanel() {
+
+                            document.getElementById('clock').style.width = 2 * r + 'px';
+
+                            document.getElementById('clock').style.height = 2 * r + 'px';
+
+                            document.getElementById('clock').style.position = 'relative';
+
+                            document.getElementById('clock').innerHTML += '<div id="center"></div>';
+
+                            document.getElementById('center').style.position = 'absolute';
+
+                            document.getElementById('center').innerHTML = '✧';
+
+                            document.getElementById('center').style.left = r + 'px';
+
+                            document.getElementById('center').style.top = r + 'px';
+
+                            for (ii = 1; ii <= 60; ii++) {
+
+                                document.getElementById('clock').innerHTML += '<div id="time' + ii + '"></div>';
+
+                                document.getElementById('time' + ii).style.position = 'absolute';
+
+                                if (ii % 60 == 0) {
+
+                                    document.getElementById('time' + ii).innerHTML = '12';
+
+                                } else if (ii % 5 == 0 || ii % 15 == 0) {
+
+                                    document.getElementById('time' + ii).innerHTML = ii / 5;
+
+                                } else {
+
+                                    document.getElementById('time' + ii).innerHTML = ' ';
+
+                                }
+
+                                document.getElementById('time' + ii).style.left = cx + r + Math.round(Math.cos((ii - 15) * 6 / 180 * Math.PI) * r) + 'px';
+
+                                document.getElementById('time' + ii).style.top = cy + r + Math.round(Math.sin((ii - 15) * 6 / 180 * Math.PI) * r) + 'px';
+
+                            }
+
+                            for (jj = 1; jj <= hl; jj++) {
+
+                                document.getElementById('clock').innerHTML += '<div id="hour_hand' + jj + '"></div>';
+
+                                document.getElementById('hour_hand' + jj).style.position = 'absolute';
+
+                                document.getElementById('hour_hand' + jj).innerHTML = '•';
+
+                            }
+
+                            for (jj = 1; jj <= ml; jj++) { //분
+
+                                document.getElementById('clock').innerHTML += '<div id="minute_hand' + jj + '"></div>';
+
+                                document.getElementById('minute_hand' + jj).style.position = 'absolute';
+
+                                document.getElementById('minute_hand' + jj).innerHTML = '•';
+
+                            }
+
+                            for (jj = 1; jj <= sl; jj++) { //초
+
+                                document.getElementById('clock').innerHTML += '<div id="second_hand' + jj + '"></div>';
+
+                                document.getElementById('second_hand' + jj).style.position = 'absolute';
+
+                                document.getElementById('second_hand' + jj).innerHTML = '˖';
+
+                            }
+
+                        }
+
+                        function clockHands() {
+
+                            var h = new Date().getHours();
+
+                            var m = new Date().getMinutes();
+
+                            var s = new Date().getSeconds();
+
+                            var hx = Math.cos((h - 3) * 30 * deg + m / 2 * deg) * r * 0.8 * hl / ml; //hour_hand_x
+
+                            var hy = Math.sin((h - 3) * 30 * deg + m / 2 * deg) * r * 0.8 * hl / ml; //hour_hand_y
+
+                            var mx = Math.cos((m - 15) * 6 * deg) * r * 0.8; //minute_hand_x
+
+                            var my = Math.sin((m - 15) * 6 * deg) * r * 0.8; //minute_hand_y
+
+                            var sx = Math.cos((s - 15) * 6 * deg) * r * 0.8; //second_hand_x
+
+                            var sy = Math.sin((s - 15) * 6 * deg) * r * 0.8; //second_hand_y
+
+                            for (jj = 1; jj <= hl; jj++) {
+
+                                document.getElementById('hour_hand' + jj).style.left = Math.round(cx + r + hx * jj / hl) + 'px';
+
+                                document.getElementById('hour_hand' + jj).style.top = Math.round(cy + r + hy * jj / hl) + 'px';
+
+                            }
+
+                            for (jj = 1; jj <= ml; jj++) {
+
+                                document.getElementById('minute_hand' + jj).style.left = Math.round(cx + r + mx * jj / ml) + 'px';
+
+                                document.getElementById('minute_hand' + jj).style.top = Math.round(cy + r + my * jj / ml) + 'px';
+
+                            }
+
+                            for (jj = 1; jj <= sl; jj++) {
+
+                                document.getElementById('second_hand' + jj).style.left = Math.round(cx + r + sx * jj / sl) + 'px';
+
+                                document.getElementById('second_hand' + jj).style.top = Math.round(cy + r + sy * jj / sl) + 'px';
+
+                            }
+
+                            setTimeout('clockHands()', 1000);
+
+                        }
+
+                        function getClock() {
+
+                            r = 50; //clock radius
+
+                            hl = 2; //hour hand length
+
+                            ml = 4; //minute hand length
+
+                            sl = 8; //second hand length
+
+                            deg = Math.PI / 180; //degrees
+
+                            cx = document.getElementById('clock').scrollLeft;
+
+                            cy = document.getElementById('clock').scrollTop;
+
+                            clockPanel();
+
+                            clockHands();
+
+                        }
+
+                        window.onload = getClock;
+
+                        //]]>
+                    </script>
+
+                    <div id="clock" style="right:-260px; font-family: 'BRBA_B'; width:40px; height:40px;color:rgb(82, 81, 81)"></div>
+
+                </body>
+
+                </html>
+
+                <div class="col-4 d-flex justify-content-end align-items-center">
+
+                    <script>
+                        function login() {
+                            var id = prompt("아이디를 입력하세요.", "admin");
+                            if (id == 'admin') {
+                                var password = prompt("비밀번호를 입력하세요.", "12345");
+                                if (password == 12345) {
+                                    $(document).ready(function() {
+                                        $(".loginn").text("Logout");
+                                    })
+                                } else {
+                                    do {
+                                        var wrong = prompt("비밀번호를 다시 입력하세요.");
+                                    } while (password == 12345);
+                                }
+                            } else {
+                                do {
+                                    var wrong = prompt("아이디를 다시 입력하세요.");
+                                } while (id == 'admin');
+                            }
+                        }
+                    </script>
+
+
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between" style="text-shadow: 1px 1px;">
+                <a class="p-2 text-muted" href="home.html">🐾 HOME</a>
+                <a class="p-2 text-muted" style="cursor:not-allowed;" href="#">HISTORY</a>
+                <a class="p-2 text-muted" href="press.html">🐾PRESS</a>
+                <a class="p-2 text-muted" style="cursor:not-allowed;" href="#">PORTFOLIO</a>
+                <a class="p-2 text-muted" href="partner.html">🐾PARTNERS</a>
+                <a class="p-2 text-muted" style="cursor:not-allowed;" href="#">WORKS</a>
+                <a class="p-2 text-muted" href="logo.html">🐾 LOGO</a>
+                <a class="p-2 text-muted" href="video.html">🐾PERFOMANCE</a>
+            </nav>
+        </div>
+
+        <div class="card-back effect2">
+            <div class="card-body">
+                <h1 style="font-family: 'BRBA_B'; color:rgb(59, 58, 58)"><text style=" font-size:25px; ">🦁</text>멋쟁이 사자처럼을 소개합니다!</h1>
+                <p style="margin-top:40px; font-family: 'Goyang';"><b>내 아이디어를 내 손으로 실현한다.</b></p style=" margin-top:20px; ">
+                <p style="font-family: 'Goyang'; ">컴퓨터를 모르는 학생들이 프로그래밍 교육을 통해 원하는 IT서비스를 직접 런칭합니다.</p>
+                <p></p>
+                <p style="margin-top:70px; "><strong><em>HACK YOUR LIFE</em></strong> </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-2 imgcard ">
+            <div class="col-md-6 ">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+                    <div class="col p-4 d-flex flex-column position-static ">
+                        <strong class="d-inline-block mb-2 text-primary ">Goal</strong>
+                        <h3 class="mb-0 ">VISION</h3>
+                        <div class="mb-1 text-muted ">June 24</div>
+                        <p class="card-text mb-auto "><strong> "내가 직접 프로그래밍하겠다. " </strong></p>
+                        <a href="# " class="stretched-link " style="color:coral; ">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block ">
+                        <img src="programming.jpg " class="bd-placeholder-img " width="200 " height="200 ">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+                    <div class="col p-4 d-flex flex-column position-static ">
+                        <strong class="d-inline-block mb-2 text-success ">Work</strong>
+                        <h3 class="mb-0 ">OUR SERVICE</h3>
+                        <div class="mb-1 text-muted ">June 24</div>
+                        <p class="mb-auto "><strong>서비스 구축을 위한 웹프로그래밍 학습</strong></p>
+                        <a href="# " class="stretched-link " style="color:darkcyan; ">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block ">
+                        <img src="webpro.jpg " class="bd-placeholder-img " width="200 " height="200 ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr id="n1" style="padding:7px; margin-top:60px; margin-bottom:60px; width:95%; ">
+    <main role="main " class="container ">
+
+        <div class="row ">
+            <div class="col-md-8 blog-main ">
+                <h3 class="pb-4 mb-4 font-italic border-bottom ">
+                    <small style="color:#777; ">From the</small> LIKELION
+                </h3>
+
+                <div class="blog-post ">
+
+                    <h2 class="blog-post-title " style="font-family: 'BRBA_B'; font-size:27px; ">온라인 강의와 오프라인 활동을 통한 체계적인 프로그래밍 교육</h2>
+                    <small class="blog-post-meta " style="color:#777; ">June 24, 2019 by <a href="# ">Hyo Gyeong</a></small>
+
+                    <div style="font-family: 'Goyang'; font-size:17px; background-color:rgb(248, 246, 246); padding-left:10px; padding-right:10px; ">
+                        <hr style="padding:5px; ">
+                        <p><b>멋쟁이 사자처럼</b>은
+                            <a href="https://twitter.com/iamdoo2 "><img src="twitter.png " width="13 " height="13 ">이두희</a>가 만든 비전공자를 대상으로 코딩을 가르치는 대학 연합 동아리이다.</p>
+                        <blockquote>
+                            <p>2013년 서울대학교에서 1기를 선발해 처음 시작한 이후로 <strong>"기술적 장벽때문에 생각을 표현하지 못한 비 전공자분들과 감동의 순간을 만들어 가고 싶습니다. "</strong> 라는 모토로 2014년에는 수도권 대학에서 2기를 선발해 활동하였으며, 2015년 전국 대학을 대상으로 3기 멋쟁이 사자들 37개대학 501명의 선발을 마쳤다.</p>
+                        </blockquote>
+                        <p>이후 여러 우여곡절을 거치고 경희대 평화의 전당에서 한 해커톤으로 3기 공식 일정은 마무리 되었다. 1기, 2기때는 그렇게 유명하지 않았는데, 이두희가 <a href="https://namu.wiki/w/%EB%8D%94%20%EC%A7%80%EB%8B%88%EC%96%B4%EC%8A%A4 ">더 지니어스</a>에 출현해 이름을 알리고, 멋쟁이 사자처럼 2기의 활동 성과가 언론을 크게 타면서 3기때는 157개
+                            대학, 3,812명. 평균경쟁률 12.7:1 을 기록했다.
+                            <p></p> 2기에서 만든 세계 최초 야동 취향 저격 사이트인 직박구리가 페이스북 등 SNS 에서 크게 인기를 얻은 것이 멋쟁이 사자처럼을 알리는데 큰 역할을 했다. 이외에도 <a href="https://jasoseol.com/ ">자소설닷컴</a> 등 멋쟁이사자처럼의 활동이 창업으로 연결되는 성과가 현 정권의 여러 창업 프로젝트 홍보, 소프트웨어 역량 강화 등등과 맞물려 언론을 잘 탄 것도 인기를
+                            얻게 된 요인.
+                        </p>
+                        <hr style="padding-top:6px; ">
+                    </div>
+                    <div style="padding:15px; ">
+                        <h2 style="font-family: 'Goyang'; font-weight:bold; ">Service</h2>
+                        <ul style="font-family: 'Goyang'; font-size:17px; ">
+                            <li style="padding:7px; ">HIGH TECHNOLOGY</li>
+                            <li style="padding:7px; ">PROGRAMMING EDUCATION</li>
+                            <li style="padding:7px; ">SERVICE REALIZATION</li>
+                            <li style="padding:7px; ">CONTINUAL MANAGEMENT</li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <h3 style="font-family: 'Goyang'; font-weight:bold; ">Detailed description</h3>
+
+                    <ul style="font-family: 'Goyang'; font-size:17px; ">
+                        <li style="padding:7px; ">최신 기술 스택 및 툴 활용 - HTML/CSS, Javascript, Angular, JS, ROR, AWS, GITHUB, SLACK, TRELLO</li>
+                        <li style="padding:7px; ">오프라인 교육 및 네트워킹 - 학교/팀별 오프라인 그룹 스터디 서비스 개발 팀 구성 오프라인 세미나</li>
+                        <li style="padding:7px; ">해커톤을 통한 아이디어 개발/서비스 구현 - 실제 아이디어 구현 창업 연계 기회(실제 사례 다수) 개발과정의 협업 경험</li>
+                        <li style="padding:7px; ">자체제작 플랫폼을 통한 개별 학생 관리 - 온라인 강의 수강 과제 피드백 및 퀴즈 진행 질의응답</li>
+                    </ul>
+                </div>
+                <div class="pagination ">
+                    <a href="# ">&laquo;</a>
+                    <a href="# ">1</a>
+                    <a href="# ">2</a>
+                    <a href="# ">3</a>
+                    <a href="# ">4</a>
+                    <a href="# ">5</a>
+                    <a href="# ">6</a>
+                    <a href="# ">&raquo;</a>
+                </div>
+                <!-- /.blog-post -->
+                <div class="row " style="font-family: 'BMHANNAAir'; padding: 30px; ">
+                    <div class="col-sm-6 ">
+                        <div class="card special ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Special-treatment One!</h5>
+                                <p class="card-text ">동덕여대 학생의 학교생활이 궁금하다면 &nbsp; 클릭!클릭!👇</p>
+                                <a href="https://www.dongduk.ac.kr/ " target="_blank " class="btn btn-1 ">Go Dong-Duk</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <div class="card ">
+                            <div class="card-body special1 ">
+                                <h5 class="card-title ">Special-treatment Two!</h5>
+                                <p class="card-text ">멋사에대한 추가적인 정보가 알고싶다면 &nbsp;클릭!클릭!👇</p>
+                                <a href="https://likelion.net/ko " target="_blank " class="btn btn-2 ">Go Wiki-lion</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /.blog-post -->
+
+
+            </div>
+            <!-- /.blog-main -->
+
+            <aside class="col-md-4 blog-sidebar " style="font-family: 'KimNamyun'; ">
+                <div class="p-4 mb-3 bg-light rounded ">
+                    <h4 class="font-italic " style="font-size:34px; ">About</h4>
+                    <p class="mb-0 " style="font-size: 20px; "> 자체 개발된 온라인 강의 플랫폼 <strong>클래스라이언 </strong>을 통해 강의를 듣고 과제를 수행합니다.
+                        <p></p> 다양한 오프라인 활동과 병행하여 뜻을 같이하는 동료를 찾고 자신이 만들고자 하는 서비스를 직접 프로그래밍 하도록 돕습니다.</p>
+                </div>
+
+                <div class="p-4 ">
+                    <h4 class="font-italic ">Archives</h4>
+                    <ol class="list-unstyled mb-0 ">
+                        <li><a href="# ">March 2019</a></li>
+                        <li><a href="# ">February 2019</a></li>
+                        <li><a href="# ">January 2019</a></li>
+                        <li><a href="# ">December 2019</a></li>
+                        <li><a href="# ">November 2019</a></li>
+                        <li><a href="# ">October 2019</a></li>
+                        <li><a href="# ">September 2019</a></li>
+                        <li><a href="# ">August 2019</a></li>
+                        <li><a href="# ">July 2019</a></li>
+                        <li><a href="# ">June 2019</a></li>
+                        <li><a href="# ">May 2019</a></li>
+                        <li><a href="# ">April 2019</a></li>
+                    </ol>
+                </div>
+
+                <div class="p-4 ">
+                    <h4 class="font-italic ">Elsewhere</h4>
+                    <ol class="list-unstyled ">
+                        <li><a href="# ">GitHub</a></li>
+                        <li><a href="# ">Twitter</a></li>
+                        <li><a href="# ">Facebook</a></li>
+                    </ol>
+                </div>
+                <h5 id="music">&emsp;Ririe's symphony - 그것은 돌연히</h5>
+                <audio style="margin:5px;" autoplay controls>
+                        <source src="riri.ogg " type="audio/ogg ">
+                      </audio>
+                <p></p>
+                <img src="dance.gif " width="120px " class="dancingLion "></p>
+                <p>
+                    <img src="dance2.gif " width="120px " class="dancingLion2 ">
+            </aside>
+
+    </main>
+
+
+
+    <!-- /.container -->
+    <footer class="blog-footer " style="font-family: 'KimNamyun'; left: 0; bottom: 0; width: 100%; ">
+        <div></div>
+        <center>
+            <p style="font-size:20px; ">멋쟁이 사자처럼 소개 by 신효경 &emsp;☎️문의 전화: (02) 123-4567</p>
+            <script>
+                let day;
+                const week = new Date().getDay();
+                var d = new Date();
+                switch (week) {
+                    case 0:
+                        day = "일요일 ";
+                        break;
+                    case 1:
+                        day = "월요일 ";
+                        break;
+                    case 2:
+                        day = "화요일 ";
+                        break;
+                    case 3:
+                        day = "수요일 ";
+                        break;
+                    case 4:
+                        day = "목요일 ";
+                        break;
+                    case 5:
+                        day = "금요일 ";
+                        break;
+                    case 6:
+                        day = "토요일 ";
+                        break;
+                }
+                document.write(d.getFullYear() + ' . ' + (d.getMonth() + 1) + ' . ' + d.getDate() + ' . ' + day);
+            </script>
+            <p>
+                <a href="# " style="font-size:18px; ">↑Back to top↑</a>
+            </p>
+
+        </center>
+        <div></div>
+        <div></div>
+    </footer>
+
+</body>
+
+</html>

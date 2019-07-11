@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Don't go~~😭</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        .card-back {
+            margin: 20px 1px;
+            padding: 20px;
+            width: 1108px;
+            height: 350px;
+            background-size: 1108px 350px;
+            background-image: url('lion.jpg');
+            box-shadow: 3px;
+            border: 1px solid black;
+        }
+        
+        div.special {
+            background-image: url('uni.png');
+            background-size: 450px 200px;
+            color: white;
+        }
+        
+        div.special1 {
+            background-image: url('ll.png');
+            background-size: 350px 200px;
+            color: black;
+            border-radius: 3px;
+        }
+        
+        .btn-1 {
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            color: white
+        }
+        
+        .btn-2 {
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            color: black;
+        }
+        
+        .btn-1:hover,
+        .btn-2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+        
+        @font-face {
+            font-family: 'fromdamiM';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'HangeulNuri-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Goyang';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'KimNamyun';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KimNamyun.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'BMHANNAAir';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'BRBA_B';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .blog-header-logo {
+            font-family: 'fromdamiM';
+            font-size: 58px;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 20px rgb(250, 175, 36), 0 0 5px rgb(180, 218, 14);
+        }
+        
+        footer {
+            background-color: darkgrey;
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        
+        .effect2 {
+            position: relative;
+        }
+        
+        .effect2:before,
+        .effect2:after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            bottom: 25px;
+            left: 10px;
+            width: 50%;
+            top: 80%;
+            max-width: 300px;
+            background: #777;
+            -webkit-box-shadow: 0 35px 20px #777;
+            -moz-box-shadow: 0 35px 20px #777;
+            box-shadow: 0 35px 20px #777;
+            -webkit-transform: rotate(-8deg);
+            -moz-transform: rotate(-8deg);
+            -o-transform: rotate(-8deg);
+            -ms-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+        }
+        
+        .effect2:after {
+            -webkit-transform: rotate(8deg);
+            -moz-transform: rotate(8deg);
+            -o-transform: rotate(8deg);
+            -ms-transform: rotate(8deg);
+            transform: rotate(8deg);
+            right: 10px;
+            left: auto;
+        }
+        
+        .imgcard {
+            height: 200px;
+        }
+        
+        .bd-placeholder-img {
+            opacity: 0.85;
+        }
+        
+        h1 {
+            font-family: 'fromdamiM';
+            text-align: center;
+            color: darkred;
+            margin-top: 150px;
+        }
+        
+        #dot {
+            color: black;
+            text-align: center;
+        }
+        
+        .blog-header-logo:hover {
+            color: bisque;
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="text-muted" href="join.html">Join</a> &emsp;&emsp;
+                    <a class="loginn" onclick="login()" style="cursor:pointer;">Login</a>&emsp;&emsp;
+                    <a class="text-muted" href="search.html">
+                        <svg style="cursor:help;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+                    </a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="home.html" style="text-decoration: none;" class="blog-header-logo ">멋쟁이 사자처럼</a>
+                </div>
+
+                <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+                <html xmlns="http://www.w3.org/1999/xhtml">
+
+
+                <body>
+
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function clockPanel() {
+
+                            document.getElementById('clock').style.width = 2 * r + 'px';
+
+                            document.getElementById('clock').style.height = 2 * r + 'px';
+
+                            document.getElementById('clock').style.position = 'relative';
+
+                            document.getElementById('clock').innerHTML += '<div id="center"></div>';
+
+                            document.getElementById('center').style.position = 'absolute';
+
+                            document.getElementById('center').innerHTML = '✧';
+
+                            document.getElementById('center').style.left = r + 'px';
+
+                            document.getElementById('center').style.top = r + 'px';
+
+                            for (ii = 1; ii <= 60; ii++) {
+
+                                document.getElementById('clock').innerHTML += '<div id="time' + ii + '"></div>';
+
+                                document.getElementById('time' + ii).style.position = 'absolute';
+
+                                if (ii % 60 == 0) {
+
+                                    document.getElementById('time' + ii).innerHTML = '12';
+
+                                } else if (ii % 5 == 0 || ii % 15 == 0) {
+
+                                    document.getElementById('time' + ii).innerHTML = ii / 5;
+
+                                } else {
+
+                                    document.getElementById('time' + ii).innerHTML = ' ';
+
+                                }
+
+                                document.getElementById('time' + ii).style.left = cx + r + Math.round(Math.cos((ii - 15) * 6 / 180 * Math.PI) * r) + 'px';
+
+                                document.getElementById('time' + ii).style.top = cy + r + Math.round(Math.sin((ii - 15) * 6 / 180 * Math.PI) * r) + 'px';
+
+                            }
+
+                            for (jj = 1; jj <= hl; jj++) {
+
+                                document.getElementById('clock').innerHTML += '<div id="hour_hand' + jj + '"></div>';
+
+                                document.getElementById('hour_hand' + jj).style.position = 'absolute';
+
+                                document.getElementById('hour_hand' + jj).innerHTML = '•';
+
+                            }
+
+                            for (jj = 1; jj <= ml; jj++) { //분
+
+                                document.getElementById('clock').innerHTML += '<div id="minute_hand' + jj + '"></div>';
+
+                                document.getElementById('minute_hand' + jj).style.position = 'absolute';
+
+                                document.getElementById('minute_hand' + jj).innerHTML = '•';
+
+                            }
+
+                            for (jj = 1; jj <= sl; jj++) { //초
+
+                                document.getElementById('clock').innerHTML += '<div id="second_hand' + jj + '"></div>';
+
+                                document.getElementById('second_hand' + jj).style.position = 'absolute';
+
+                                document.getElementById('second_hand' + jj).innerHTML = '˖';
+
+                            }
+
+                        }
+
+                        function clockHands() {
+
+                            var h = new Date().getHours();
+
+                            var m = new Date().getMinutes();
+
+                            var s = new Date().getSeconds();
+
+                            var hx = Math.cos((h - 3) * 30 * deg + m / 2 * deg) * r * 0.8 * hl / ml; //hour_hand_x
+
+                            var hy = Math.sin((h - 3) * 30 * deg + m / 2 * deg) * r * 0.8 * hl / ml; //hour_hand_y
+
+                            var mx = Math.cos((m - 15) * 6 * deg) * r * 0.8; //minute_hand_x
+
+                            var my = Math.sin((m - 15) * 6 * deg) * r * 0.8; //minute_hand_y
+
+                            var sx = Math.cos((s - 15) * 6 * deg) * r * 0.8; //second_hand_x
+
+                            var sy = Math.sin((s - 15) * 6 * deg) * r * 0.8; //second_hand_y
+
+                            for (jj = 1; jj <= hl; jj++) {
+
+                                document.getElementById('hour_hand' + jj).style.left = Math.round(cx + r + hx * jj / hl) + 'px';
+
+                                document.getElementById('hour_hand' + jj).style.top = Math.round(cy + r + hy * jj / hl) + 'px';
+
+                            }
+
+                            for (jj = 1; jj <= ml; jj++) {
+
+                                document.getElementById('minute_hand' + jj).style.left = Math.round(cx + r + mx * jj / ml) + 'px';
+
+                                document.getElementById('minute_hand' + jj).style.top = Math.round(cy + r + my * jj / ml) + 'px';
+
+                            }
+
+                            for (jj = 1; jj <= sl; jj++) {
+
+                                document.getElementById('second_hand' + jj).style.left = Math.round(cx + r + sx * jj / sl) + 'px';
+
+                                document.getElementById('second_hand' + jj).style.top = Math.round(cy + r + sy * jj / sl) + 'px';
+
+                            }
+
+                            setTimeout('clockHands()', 1000);
+
+                        }
+
+                        function getClock() {
+
+                            r = 50; //clock radius
+
+                            hl = 2; //hour hand length
+
+                            ml = 4; //minute hand length
+
+                            sl = 8; //second hand length
+
+                            deg = Math.PI / 180; //degrees
+
+                            cx = document.getElementById('clock').scrollLeft;
+
+                            cy = document.getElementById('clock').scrollTop;
+
+                            clockPanel();
+
+                            clockHands();
+
+                        }
+
+                        window.onload = getClock;
+
+                        //]]>
+                    </script>
+
+                    <div id="clock" style="right:-260px; font-family: 'BRBA_B'; width:40px; height:40px;color:rgb(82, 81, 81)"></div>
+
+                </body>
+
+                </html>
+
+                <div class="col-4 d-flex justify-content-end align-items-center">
+
+                    <script>
+                        function login() {
+                            var id = prompt("아이디를 입력하세요.", "admin");
+                            if (id == 'admin') {
+                                var password = prompt("비밀번호를 입력하세요.", "12345");
+                                if (password == 12345) {
+                                    $(document).ready(function() {
+                                        $(".loginn").text("Logout");
+                                    })
+                                } else {
+                                    do {
+                                        var wrong = prompt("비밀번호를 다시 입력하세요.");
+                                    } while (password == 12345);
+                                }
+                            } else {
+                                do {
+                                    var wrong = prompt("아이디를 다시 입력하세요.");
+                                } while (id == 'admin');
+                            }
+                        }
+                    </script>
+
+
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between" style="text-shadow: 1px 1px;">
+                <a class="p-2 text-muted" href="home.html">🐾 HOME</a>
+                <a class="p-2 text-muted" style="cursor:not-allowed;" href="#">HISTORY</a>
+                <a class="p-2 text-muted" href="press.html">🐾PRESS</a>
+                <a class="p-2 text-muted" style="cursor:not-allowed;" href="#">PORTFOLIO</a>
+                <a class="p-2 text-muted" href="partner.html">🐾PARTNERS</a>
+                <a class="p-2 text-muted" style="cursor:not-allowed;" href="#">WORKS</a>
+                <a class="p-2 text-muted" href="logo.html">🐾 LOGO</a>
+                <a class="p-2 text-muted" href="video.html">🐾PERFOMANCE</a>
+            </nav>
+        </div>
+    </div>
+
+    <h1>정말로 회원을 탈퇴하시겠습니까?<img src="shock.gif" width="200px;"></h1>
+    <p style="margin-top:50px;"></p>
+    <p id="dot">o</p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p id="dot"></p>
+    <p id="dot">o</p>
+    <p style="text-align: center;font-family: 'fromdamiM'; font-size: 30px;"><img src="cry.gif" width="230px" height="230px">가지마유...ㅠ-ㅠ</p>
+</body>
+<footer class="blog-footer " style="font-family: 'KimNamyun'; left: 0; bottom: 0; width: 100%; ">
+    <div></div>
+    <center>
+        <p style="font-size:20px; ">멋쟁이 사자처럼 소개 by 신효경 &emsp;☎️문의 전화: (02) 123-4567</p>
+        <script>
+            let day;
+            const week = new Date().getDay();
+            var d = new Date();
+            switch (week) {
+                case 0:
+                    day = "일요일 ";
+                    break;
+                case 1:
+                    day = "월요일 ";
+                    break;
+                case 2:
+                    day = "화요일 ";
+                    break;
+                case 3:
+                    day = "수요일 ";
+                    break;
+                case 4:
+                    day = "목요일 ";
+                    break;
+                case 5:
+                    day = "금요일 ";
+                    break;
+                case 6:
+                    day = "토요일 ";
+                    break;
+            }
+            document.write(d.getFullYear() + ' . ' + (d.getMonth() + 1) + ' . ' + d.getDate() + ' . ' + day);
+        </script>
+        <p>
+            <a href="# " style="font-size:20px; ">↑Back to top↑</a>
+        </p>
+
+    </center>
+    <div></div>
+    <div></div>
+</footer>
+
+</html>
